@@ -14,7 +14,7 @@ app.get("/hello/:thetext", function(request, response) {
 });
 
 app.get("/sum/:num1/:num2", function(request, response){
-	response.send(request.params.num1.toString() + " + " + request.params.num2.toString() + " = " + nodeSum.nodeSum(request.params.num1 ,request.params.num2).toString());
+	response.send("sum" + request.params.num1.toString() + "+" + request.params.num2.toString() + "=" + nodeSum.nodeSum(request.params.num1 ,request.params.num2).toString());
 });
 
 app.listen(port, host);
